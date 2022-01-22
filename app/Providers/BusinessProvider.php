@@ -3,6 +3,7 @@
 
 namespace App\Providers;
 
+use App\Business\Abstracts\IAuthService;
 use App\Business\Abstracts\ICategoryService;
 use App\Business\Abstracts\ICustomerService;
 use App\Business\Abstracts\IEmployeeService;
@@ -14,6 +15,7 @@ use App\Business\Abstracts\IRegionService;
 use App\Business\Abstracts\IShipperService;
 use App\Business\Abstracts\ISupplierService;
 use App\Business\Abstracts\ITerritoryService;
+use App\Business\Concrete\AuthManager;
 use App\Business\Concrete\CategoryManager;
 use App\Business\Concrete\CustomerManager;
 use App\Business\Concrete\EmployeeManager;
@@ -36,6 +38,7 @@ class BusinessProvider extends ServiceProvider
      */
     public function register(): void
     {
+        $this->app->singleton(IAuthService::class, AuthManager::class);
         $this->app->singleton(ICategoryService::class, CategoryManager::class);
         $this->app->singleton(ICustomerService::class, CustomerManager::class);
         $this->app->singleton(IEmployeeService::class, EmployeeManager::class);

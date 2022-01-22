@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Entities\User;
+use App\DataAccess\Concrete\Eloquent\Models\UserModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -13,7 +13,7 @@ class UserFactory extends Factory
      *
      * @var string
      */
-    protected $model = User::class;
+    protected $model = UserModel::class;
 
     /**
      * Define the model's default state.
@@ -34,7 +34,7 @@ class UserFactory extends Factory
     /**
      * Indicate that the model's email address should be unverified.
      *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     * @return Factory
      */
     public function unverified()
     {

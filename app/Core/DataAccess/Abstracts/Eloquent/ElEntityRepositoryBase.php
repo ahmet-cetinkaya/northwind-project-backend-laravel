@@ -67,7 +67,8 @@ abstract class ElEntityRepositoryBase implements IEntityRepository
      */
     public function GetById($id): IEntity
     {
-        return $this->_model::find($id)->toEntity();
+        $model = $this->_model::where($this->_model->getKeyName(), $id)->first();
+        return $model->toEntity();
     }
 
     /**

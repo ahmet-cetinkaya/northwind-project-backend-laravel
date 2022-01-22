@@ -14,6 +14,7 @@ use App\DataAccess\Abstracts\IRegionDal;
 use App\DataAccess\Abstracts\IShipperDal;
 use App\DataAccess\Abstracts\ISupplierDal;
 use App\DataAccess\Abstracts\ITerritoryDal;
+use App\DataAccess\Abstracts\IUserDal;
 use App\DataAccess\Concrete\Eloquent\ElCategoryDal;
 use App\DataAccess\Concrete\Eloquent\ElCustomerDal;
 use App\DataAccess\Concrete\Eloquent\ElEmployeeDal;
@@ -25,6 +26,7 @@ use App\DataAccess\Concrete\Eloquent\ElRegionDal;
 use App\DataAccess\Concrete\Eloquent\ElShipperDal;
 use App\DataAccess\Concrete\Eloquent\ElSupplierDal;
 use App\DataAccess\Concrete\Eloquent\ElTerritoryDal;
+use App\DataAccess\Concrete\Eloquent\ElUserDal;
 use Illuminate\Support\ServiceProvider;
 
 class DataAccessProvider extends ServiceProvider
@@ -47,6 +49,7 @@ class DataAccessProvider extends ServiceProvider
         $this->app->singleton(IShipperDal::class, ElShipperDal::class);
         $this->app->singleton(ISupplierDal::class, ElSupplierDal::class);
         $this->app->singleton(ITerritoryDal::class, ElTerritoryDal::class);
+        $this->app->singleton(IUserDal::class, ElUserDal::class);
     }
 
     /**
