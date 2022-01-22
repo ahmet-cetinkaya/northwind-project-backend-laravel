@@ -1,64 +1,237 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center">
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/graphs/contributors"><img src="https://img.shields.io/github/contributors/ahmet-cetinkaya/northwind-project-backend-laravel.svg?style=for-the-badge"></a>
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/network/members"><img src="https://img.shields.io/github/forks/ahmet-cetinkaya/northwind-project-backend-laravel.svg?style=for-the-badge"></a>
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/stargazers"><img src="https://img.shields.io/github/stars/ahmet-cetinkaya/northwind-project-backend-laravel.svg?style=for-the-badge"></a>
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/issues"><img src="https://img.shields.io/github/issues/ahmet-cetinkaya/northwind-project-backend-laravel.svg?style=for-the-badge"></a>
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ahmet-cetinkaya/northwind-project-backend-laravel.svg?style=for-the-badge"></a>
+  <a href="https://linkedin.com/in/ahmet-cetinkaya"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+</p>
+<br />
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel"><img src="https://user-images.githubusercontent.com/53148314/131480031-a767a623-c066-4064-b47c-0344b9408995.png" height="125"></a>
+  <h3 align="center">Northwind Project Backend Laravel</h3>
+  <p align="center">
+   Northwind Project Backend is a demo project with Laravel and N-Layer Architecture. 
+    <br />
+    <!-- <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel"><strong>Explore the docs »</strong></a> -->
+    <br />
+    <!-- <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel">View Demo</a>
+    · -->
+    <!-- <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/issues">Request Feature</a> -->
+  </p>
 </p>
 
-## About Laravel
+## 💻 About The Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Built With
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Layers
 
-## Learning Laravel
+#### Routes
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Routes Layer that opens the Http layer to the internet.
+path: "/routes"
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### HTTP
 
-## Laravel Sponsors
+HTTP Layer has controllers and middlewares.
+path: "/app/Http"
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### Business
 
-### Premium Partners
+Business Layer created to process or control the incoming information according to the required conditions.
+path: "/app/Business"
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+#### Core
 
-## Contributing
+Core layer containing various particles independent of the project.
+path: "/app/Core"
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### DataAccess
 
-## Code of Conduct
+Data Access Layer created to perform database CRUD operations.
+path: "/app/DataAccess"
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### Entities
 
-## Security Vulnerabilities
+Entities Layer created for database tables.
+path: "/app/Entities"
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚙️ Getting Started
 
-## License
+### Prerequisites
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- PHP 8.0
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel.git
+   ```
+2. Import Dump to MySql
+3. ```sh
+   cd /northwind-project-backend-laravel
+   ```
+4. Copy `.env.example` file and rename `.env`. Edit database configurations on `.env` file
+5. Download composer: https://getcomposer.org/download/
+6. ```sh
+   composer update
+   ```
+7. ```sh
+   composer install
+   ```
+8. Start project
+   ```sh
+   php artisan serve
+   ```
+
+## 🚀 Usage API
+
+<details>
+<summary>Click to toggle contents of `Usage API`</summary>
+| Domain | Method | URI                           | Name                          | Action                                                  | Middleware                                                 |
+| ------ | ------ | ----------------------------- | ----------------------------- | ------------------------------------------------------- | ---------------------------------------------------------- | --- |
+|        | GET    | HEAD                          | /                             |                                                         | Closure                                                    | web |
+|        | POST   | api/auth/login                |                               | App\Http\Controllers\AuthController@login               | api                                                        |
+|        | GET    | HEAD                          | api/auth/refresh              |                                                         | App\Http\Controllers\AuthController@refresh                | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\Authenticate:api                       |
+|        | POST   | api/auth/register             |                               | App\Http\Controllers\AuthController@register            | api                                                        |
+|        | GET    | HEAD                          | api/categories                |                                                         | App\Http\Controllers\CategoryController@GetAll             | api |
+|        | POST   | api/categories                |                               | App\Http\Controllers\CategoryController@Add             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/categories/{id}           |                                                         | App\Http\Controllers\CategoryController@GetById            | api |
+|        | PUT    | api/categories/{id}           |                               | App\Http\Controllers\CategoryController@Update          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/categories/{id}           |                               | App\Http\Controllers\CategoryController@Delete          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/customers                 |                                                         | App\Http\Controllers\CustomerController@GetAll             | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/customers                 |                               | App\Http\Controllers\CustomerController@Add             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/customers/{id}            |                                                         | App\Http\Controllers\CustomerController@GetById            | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/customers/{id}            |                               | App\Http\Controllers\CustomerController@Update          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/customers/{id}            |                               | App\Http\Controllers\CustomerController@Delete          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/employees                 |                                                         | App\Http\Controllers\EmployeeController@GetAll             | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/employees                 |                               | App\Http\Controllers\EmployeeController@Add             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/employees/{id}            |                                                         | App\Http\Controllers\EmployeeController@GetById            | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/employees/{id}            |                               | App\Http\Controllers\EmployeeController@Update          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/employees/{id}            |                               | App\Http\Controllers\EmployeeController@Delete          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/employeesterritories      |                                                         | App\Http\Controllers\EmployeeTerritoryController@GetAll    | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/employeesterritories      |                               | App\Http\Controllers\EmployeeTerritoryController@Add    | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/employeesterritories/{id} |                                                         | App\Http\Controllers\EmployeeTerritoryController@GetById   | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/employeesterritories/{id} |                               | App\Http\Controllers\EmployeeTerritoryController@Update | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/employeesterritories/{id} |                               | App\Http\Controllers\EmployeeTerritoryController@Delete | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/orderdetails              |                                                         | App\Http\Controllers\OrderDetailController@GetAll          | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/orderdetails              |                               | App\Http\Controllers\OrderDetailController@Add          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/orderdetails/{id}         |                                                         | App\Http\Controllers\OrderDetailController@GetById         | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/orderdetails/{id}         |                               | App\Http\Controllers\OrderDetailController@Update       | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/orderdetails/{id}         |                               | App\Http\Controllers\OrderDetailController@Delete       | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/orders                    |                                                         | App\Http\Controllers\OrderController@GetAll                | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/orders                    |                               | App\Http\Controllers\OrderController@Add                | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/orders/{id}               |                                                         | App\Http\Controllers\OrderController@GetById               | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/orders/{id}               |                               | App\Http\Controllers\OrderController@Update             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/orders/{id}               |                               | App\Http\Controllers\OrderController@Delete             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/products                  |                                                         | App\Http\Controllers\ProductController@GetAll              | api |
+|        | POST   | api/products                  |                               | App\Http\Controllers\ProductController@Add              | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/products/{id}             |                                                         | App\Http\Controllers\ProductController@GetById             | api |
+|        | PUT    | api/products/{id}             |                               | App\Http\Controllers\ProductController@Update           | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/products/{id}             |                               | App\Http\Controllers\ProductController@Delete           | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/regions                   |                                                         | App\Http\Controllers\RegionController@GetAll               | api |
+|        | POST   | api/regions                   |                               | App\Http\Controllers\RegionController@Add               | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/regions/{id}              |                                                         | App\Http\Controllers\RegionController@GetById              | api |
+|        | PUT    | api/regions/{id}              |                               | App\Http\Controllers\RegionController@Update            | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/regions/{id}              |                               | App\Http\Controllers\RegionController@Delete            | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/shippers                  |                                                         | App\Http\Controllers\ShipperController@GetAll              | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/shippers                  |                               | App\Http\Controllers\ShipperController@Add              | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/shippers/{id}             |                                                         | App\Http\Controllers\ShipperController@GetById             | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/shippers/{id}             |                               | App\Http\Controllers\ShipperController@Update           | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/shippers/{id}             |                               | App\Http\Controllers\ShipperController@Delete           | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/suppliers                 |                                                         | App\Http\Controllers\SupplierController@GetAll             | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/suppliers                 |                               | App\Http\Controllers\SupplierController@Add             | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/suppliers/{id}            |                                                         | App\Http\Controllers\SupplierController@GetById            | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/suppliers/{id}            |                               | App\Http\Controllers\SupplierController@Update          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/suppliers/{id}            |                               | App\Http\Controllers\SupplierController@Delete          | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/territories               |                                                         | App\Http\Controllers\TerritoryController@GetAll            | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | POST   | api/territories               |                               | App\Http\Controllers\TerritoryController@Add            | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | api/territories/{id}          |                                                         | App\Http\Controllers\TerritoryController@GetById           | api |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | PUT    | api/territories/{id}          |                               | App\Http\Controllers\TerritoryController@Update         | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | DELETE | api/territories/{id}          |                               | App\Http\Controllers\TerritoryController@Delete         | api                                                        |
+|        |        |                               |                               |                                                         | App\Http\Middleware\SecuredOperation:admin                 |
+|        | GET    | HEAD                          | sanctum/csrf-cookie           |                                                         | Laravel\Sanctum\Http\Controllers\CsrfCookieController@show | web |
+
+</details>
+<!-- ## 🚧 Roadmap
+See the [open issues](https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel/issues) for a list of proposed features (and known issues). -->
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## ⚖️ License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📧 Contact
+
+Ahmet ÇETİNKAYA - [ahmetcetinkaya.info](https://ahmetcetinkaya.info/)
+
+Project Link: [https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel](https://github.com/ahmet-cetinkaya/northwind-project-backend-laravel)
+
+<!-- ## 🙏 Acknowledgements
+
+-   []() -->
